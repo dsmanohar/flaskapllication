@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+      <div class="positionfixed">
+
+
+      <div class="navbar">
+        <img src="{{url_for('static',filename='logo.png.png')}}" alt="">
+        <button onclick="myfunc()" type="button" name="button" id="loginbutton">log-in</button>
+     <a href="/signup"> <h1>Sign up</h1></a>
+      </div>
+  </div>
+  <div class="text">
+    <h1 class="msg">Connect and chat with your friends</h1>
+
+    <h1 class="msg">Sign-Up right now</h1>
+  </div>
+
+  </body>
+ <script type="text/javascript" src="{{url_for('static',filename='js/login.js')}}">  </script>
+</html>

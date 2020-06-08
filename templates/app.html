@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+          <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body onload="loadfunction()">
+    <div class="header">
+
+                   <img src="{{url_for('static',filename='logo.png.png')}}" alt="">
+                   <a href="/home">Home</a>
+ <h1 id="logout">Logout</h1>
+ <h1>|</h1>
+           <h1 id="findpeople">Find people</h1>
+
+         <h1 class="userrename">Messages</h1>
+    </div>
+  <div class="post" id="post">
+  <div class="submitpost" contenteditable="true" data-placeholder="Type Something" id="submitpost"></div>
+  <button  class="postbtn" id="postbtn">Post</button>
+
+</div>
+
+  <img src="{{url_for('static',filename='mess.png')}}" alt="" onclick="messagefunction(1)" id="newimg">
+    <div class="messagesbox" id="messagesbox">
+       <h1 class="nofriendsyet">You have No Frnds Yet</h1>
+  </div>
+
+  <div id="chatbox">
+
+</div>
+<div id="root"></div>
+  </body>
+  <script type="text/javascript" src="{{url_for('static',filename='js/app.js')}}">  </script>
+  <script type="text/babel">
+
+  </script>
+</html>

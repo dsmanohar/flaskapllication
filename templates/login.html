@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+          <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="{{url_for('static',filename='logo.png.png')}}" alt="" classname="logo">
+      <h1>Jus-Talk</h1>
+
+    </div>
+  <div class="border"></div>
+  <h1 class="textmid">Log-In</h1>
+  <div class="forms">
+   <input type="text"  id="useid" name="" value="" placeholder="Your User ID or Email">
+   <input type="password" id="password" name="" value="" placeholder="Your password">
+   <h2></h2>
+   <button type="button" name="button" class="newbutton">Log-In</button>
+     <div class="line"></div>
+  <h1 class="newtextmid">Login With</h1>
+  </div>
+  <div class="socialmediaicons">
+    <a href="" class="fa fa-facebook"></a>
+  <a href="" class="fa fa-twitter"></a>
+  <a href="" class="fa fa-google"></a>
+  </div>
+  <div class="forget">
+     <a href="">forgot password?</a>
+  </div>
+
+  </body>
+ <script type="text/javascript" src="{{url_for('static',filename='js/newlogin.js')}}">  </script>
+</html>
